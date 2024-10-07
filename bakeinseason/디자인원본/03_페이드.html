@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃1</title>
+  <style>
+    /* reset */
+    * {margin: 0;padding: 0;}
+    a {text-decoration: none; color:#333;}
+    ul,li {list-style: none;}
+
+    /* 전체레이아웃 */
+    #wrap {width: 1200px;margin: 0 auto;}
+    #header {width: 100%;display: flex;height: 100px;}
+    #header .logo {width: 200px;background: #efbcbc;}
+    #header .nav {width: 1000px;background: #eea3a3;}
+    #slider {width: 100%;height: 300px;background: #f48383;}
+    #contents {width: 100%;height: 200px;display: flex;}
+    #contents .content1 {width: 33.3333%;background: #f95e5e;}
+    #contents .content2 {width: 33.3333%;background: #ef3b3b;}
+    #contents .content3 {width: 33.3333%;background: #973030;}
+    #footer {width: 100%;height: 100px;display: flex;}
+    #footer .footer1 {width: 200px;background: #efbcbc;}
+    #footer .footer2 {width: 800px;background: #cab1b1;}
+    #footer .footer3 {width: 200px;background: #756969;}
+
+    /* 슬라이더 */
+    #slider {position: relative; overflow:hidden;}
+    #slider ul li {
+      width: 1200px;
+      height: 300px;
+      position: absolute;
+      left: 0;top: 0;
+    }
+    #slider ul li img {display: block;}
+    #slider ul li a {position: relative;display: block;}
+    #slider ul li a span{
+      position: absolute;
+      left: 50%;top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      background: rgba(0,0,0,.5);
+      color:#fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <h1 class="logo"></h1>
+      <nav class="nav"></nav>
+    </header>
+    <section id="slider">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="../img/slider01.jpg" alt="슬라이드1">
+            <span>슬라이드1</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../img/slider02.jpg" alt="슬라이드2">
+            <span>슬라이드2</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../img/slider03.jpg" alt="슬라이드3">
+            <span>슬라이드3</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="contents">
+      <article class="content1"></article>
+      <article class="content2"></article>
+      <article class="content3"></article>
+    </section>
+    <footer id="footer">
+      <div class="footer1"></div>
+      <div class="footer2"></div>
+      <div class="footer3"></div>
+    </footer>
+  </div>
+  <!-- //wrap -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(function(){
+    //#sldider li를 모두 숨기고 첫번째 li만 보여라
+    $('#slider li').hide().eq(0).show()
+
+     // #slider li를 3초에 한번씩 다음장면으로 fadeIn해라.
+      let n = 0
+      setInterval(function (){
+        n++;
+        if(n == 3){
+          n = 0
+        }
+        //모두다 fadeOut을 먼저하고 n번째 li만 fadeIn해라
+        $('#slider li').fadeOut().eq(n).fadeIn()
+       },3000)
+    })
+    
+
+
+    // function sldie(){
+    //   n++ //n값을 1씩 증가
+    //   if(n == 4){
+    //     $('#slider > ul').css({top:0})
+    //     n = 1
+    //   }
+    //   $('#slider > ul').animate({top:-300*n})
+    // }
+    // setInterval(sldie,3000)
+
+  </script>
+</body>
+</html>
