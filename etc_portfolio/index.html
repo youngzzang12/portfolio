@@ -1,0 +1,228 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+<script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+<style>
+.on{color:#12887A;}
+ul, li{list-style: none;}
+a{color: #333; text-decoration: none;}
+</style>
+</head>
+<body >
+<div class="select">
+	<ul>
+		<li><a href="#" class="1">인포그래픽디자인</a></li>
+		<li><a href="#" class="2">아이콘디자인</a></li>
+		<li><a href="#" class="3">명함디자인</a></li>
+		<li><a href="#" class="4">브랜딩디자인 1</a></li>
+		<li><a href="#" class="5">브랜딩디자인 2</a></li>
+		<li><a href="#" class="6">책커버디자인 1</a></li>
+		<li><a href="#" class="7">책커버디자인 2</a></li>
+		<li><a href="#" class="8">포스터디자인 1</a></li>
+		<li><a href="#" class="9">포스터디자인 2</a></li>
+		<li><a href="#" class="10">이벤트디자인</a></li>
+		<li><a href="#" class="11">카카오이모티콘</a></li>
+		<li><a href="#" class="12">3단탬플릿 1</a></li>
+		<li><a href="#" class="13">3단탬플릿 2</a></li>
+		
+	</ul>
+</div>
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(pages/1.jpg)"></div>
+			<div style="background-image:url(pages/2.jpg)"></div>
+			<div style="background-image:url(pages/3.jpg)"></div>
+			<div style="background-image:url(pages/4.jpg)"></div>
+			<div style="background-image:url(pages/5.jpg)"></div>
+			<div style="background-image:url(pages/6.jpg)"></div>
+			<div style="background-image:url(pages/7.jpg)"></div>
+			<div style="background-image:url(pages/8.jpg)"></div>
+			<div style="background-image:url(pages/9.jpg)"></div>
+			<div style="background-image:url(pages/10.jpg)"></div>
+			<div style="background-image:url(pages/11.jpg)"></div>
+			<div style="background-image:url(pages/12.jpg)"></div>
+			<div style="background-image:url(pages/13.jpg)"></div>
+			<div style="background-image:url(pages/14.jpg)"></div>
+			<div style="background-image:url(pages/15.jpg)"></div>
+			<div style="background-image:url(pages/16.jpg)"></div>
+			<div style="background-image:url(pages/17.jpg)"></div>
+			<div style="background-image:url(pages/18.jpg)"></div>
+			<div style="background-image:url(pages/19.jpg)"></div>
+			<div style="background-image:url(pages/20.jpg)"></div>
+			<div style="background-image:url(pages/21.jpg)"></div>
+			<div style="background-image:url(pages/22.jpg)"></div>
+			<div style="background-image:url(pages/23.jpg)"></div>
+			<div style="background-image:url(pages/24.jpg)"></div>
+			<div style="background-image:url(pages/25.jpg)"></div>
+			<div style="background-image:url(pages/26.jpg)"></div>
+			<div style="background-image:url(pages/27.jpg)"></div>
+			
+			
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:1075,
+			
+			// Height
+
+			height:700,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['lib/turn.js'],
+	nope: ['lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
+<script>
+$(document).ready(function(){
+	$('.select ul li a').click(function(){
+		$('.select ul li a').removeClass('on');
+		$(this).addClass('on');
+	});
+	
+	$('.1').click(function(){
+		$(".flipbook").turn("page", 2);	
+	});
+	$('.2').click(function(){
+		$(".flipbook").turn("page", 4);
+	});
+	$('.3').click(function(){
+		$(".flipbook").turn("page", 6);
+	});
+	$('.4').click(function(){
+		$(".flipbook").turn("page", 8);	
+	});
+	$('.5').click(function(){
+		$(".flipbook").turn("page", 10);
+	});
+	$('.6').click(function(){
+		$(".flipbook").turn("page", 12);
+	});
+	$('.7').click(function(){
+		$(".flipbook").turn("page", 14);
+	});
+	$('.8').click(function(){
+		$(".flipbook").turn("page", 16);
+	});
+	$('.9').click(function(){
+		$(".flipbook").turn("page", 18);
+	});
+	$('.10').click(function(){
+		$(".flipbook").turn("page", 20);
+	});
+	$('.11').click(function(){
+		$(".flipbook").turn("page",22);
+	});
+	$('.12').click(function(){
+		$(".flipbook").turn("page", 24);
+	});
+	$('.13').click(function(){
+		$(".flipbook").turn("page", 26);
+	});
+
+
+
+	$(".flipbook").bind("turning", function(event, page, view) {
+		if (page==2||page==3) {
+			$('.select ul li a').removeClass('on');
+			$('.1').addClass('on');
+		}
+		if (page==4||page==5) {			
+			$('.select ul li a').removeClass('on');
+			$('.2').addClass('on');
+		}		
+		if (page==6||page==7) {
+			$('.select ul li a').removeClass('on');
+			$('.3').addClass('on');
+		}
+		if (page==8||page==9) {
+			$('.select ul li a').removeClass('on');
+			$('.4').addClass('on');
+		}
+		if (page==10||page==11) {
+			$('.select ul li a').removeClass('on');
+			$('.5').addClass('on');
+		}
+		if (page==12||page==13) {
+			$('.select ul li a').removeClass('on');
+			$('.6').addClass('on');
+		}
+		if (page==14||page==15) {
+			$('.select ul li a').removeClass('on');
+			$('.7').addClass('on');
+		}
+		if (page==16||page==17) {
+			$('.select ul li a').removeClass('on');
+			$('.8').addClass('on');
+		}
+		if (page==18||page==19) {
+			$('.select ul li a').removeClass('on');
+			$('.9').addClass('on');
+		}
+		if (page==20||page==21) {
+			$('.select ul li a').removeClass('on');
+			$('.10').addClass('on');
+		}
+		if (page==22||page==23) {
+			$('.select ul li a').removeClass('on');
+			$('.11').addClass('on');
+		}
+		if (page==24||page==25) {
+			$('.select ul li a').removeClass('on');
+			$('.12').addClass('on');
+		}
+		if (page==26||page==27) {
+			$('.select ul li a').removeClass('on');
+			$('.13').addClass('on');
+		}
+		});
+	});
+</script>
+
+
+
+
+

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bake in season</title>
+  <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" href="./images_2/favicon.png">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script/jquery-3.7.0.js"></script>
+<script src="./script/script.js"></script>
+</head>
+<body>
+ 
+  <div id="wrap">
+   
+    <header id="header">
+                 <div class="container">
+        <h1 class="logo"><a href="./index.html">Bake In Season</a></h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Menu</a>
+              <ul class="submenu">
+                <li><a href="#">메뉴소개</a></li>
+                
+              </ul>
+            </li>
+            <li><a href="#">Reservation</a>
+              <ul class="submenu">
+                <li><a href="#">픽업예약</a></li>
+                <li><a href="#">대량주문</a></li>
+                <li><a href="#">매장안내</a></li>
+               
+              </ul>
+            </li>
+            <li><a href="#">Event</a>
+              <ul class="submenu">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">공지사항</a></li>
+                
+              </ul>
+            </li>
+            <li><a href="#">Help</a>
+              <ul class="submenu">
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">1:1문의</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+          <div class="etc_menu">
+            <ul>
+              <li class="login"><a href="#">로그인</a></li>
+              <li class="cart"><a href="#">장바구니</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+    </header>
+
+
+    <section id="slider">
+      <div class="swiper mainSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide s1">
+          </div>
+          <div class="swiper-slide s2">
+          </div>
+          <div class="swiper-slide s3">
+          </div>
+          <div class="swiper-slide s4">
+          </div>
+          <div class="swiper-slide s5">
+          </div>
+          <div class="swiper-slide s6">
+          </div>
+          <div class="swiper-slide s7">
+          </div>
+          <div class="swiper-slide s8">
+          </div>
+          
+        </div>
+       
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mainSwiper", {
+         autoplay:{
+          delay:5000,
+         },
+          effect: "fade",
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+
+    </section>
+   
+  
+
+    <section id="contents">
+      <div class="container">
+        <div class="new_menu">
+          <h3>New Menu</h3>
+          <!-- Swiper -->
+        <div class="swiper new_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="new_wrap">
+                <div class="new_img"><img src="./images_2/new_menu_set.jpg" alt="쿠키"></div>
+                <h4 class="new_text">구움과자선물세트</h4></h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="new_wrap">
+                <div class="new_img"><img src="./images_2/new_menu_macaron.jpg" alt="쿠키"></div>
+                <h4 class="new_text">사랑스런 마카롱</h4>
+              </div>
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="new_wrap">
+                <div class="new_img"><img src="./images_2/new_menu_qutecookie.jpg" alt="쿠키"></div>
+                <h4 class="new_text">귀요미쿠키</h4> 
+              </div>
+            
+            </div>
+            <div class="swiper-slide">
+              <div class="new_wrap">
+                <div class="new_img"><img src="./images_2/new_menu_cupcake..jpg" alt="쿠키"></div>
+                <h4 class="new_text">퐁신퐁신 딸기</h4>
+              </div>
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="new_wrap">
+                <div class="new_img"><img src="./images_2/new_menu_cookie.jpg" alt="쿠키"></div>
+                <h4 class="new_text">카카오초코칩쿠키</h4>
+              </div>
+            
+            </div>
+            <div class="swiper-slide">
+              <div class="new_wrap">
+                <div class="new_img"><img src="./images_2/new_menu(other1).png" alt="쿠키"></div>
+                <h4 class="new_text">프렌치베리 케이크</h4>
+              </div>
+            </div>
+              <div class="swiper-slide">
+                <div class="new_wrap">
+                  <div class="new_img"><img src="./images_2/new_menu(other2).png" alt="쿠키"></div>
+                  <h4 class="new_text">블루베리 치즈 케이크</h4>
+                </div>
+            
+            </div>
+            <div class="swiper-slide">
+              <div class="new_wrap">
+                <div class="new_img"><img src="./images_2/new_menu(other3).png" alt="쿠키"></div>
+                <h4 class="new_text">당근 케이크</h4>
+              </div>
+          
+          </div>
+        
+          
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+        <!-- Swiper JS -->
+       
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".new_swiper", {
+            grabCursor: true,
+            centeredSlides: false,
+            slidesPerView: 5,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          });
+        </script>
+
+     
+      <div class="main_banner">
+        <div class="container">
+          <a href="#">
+            <span><img src="./images_2/main_banner1.png" alt="이미지1"></span>
+          </a>
+        </div>
+
+      </div>
+                
+      <div class="best_menu">
+        <h3>Best Menu</h3>
+        <div class="swiper best_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <div class="best_img"><img src="./images_2/best_menu_bakery.jpg" alt="쿠키"></div>
+                <h4 class="best_text">휘낭시에</h4></h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <div class="best_img"><img src="./images_2/best_menu_cookie1.jpg" alt="쿠키"></div>
+                <h4 class="best_text">무화과 치즈쿠키</h4>
+              </div>
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <div class="best_img"><img src="./images_2/best_menu_oatmealcookie.jpg" alt="쿠키"></div>
+                <h4 class="best_text">오독오독 오트밀쿠키</h4> 
+              </div>
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <div class="best_img"><img src="./images_2/best_menu_cake.jpg" alt="쿠키"></div>
+                <h4 class="best_text">피넛바나나 치즈케이크 </h4>
+              </div>
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <div class="best_img"><img src="./images_2/best_menu_egg.jpg" alt="쿠키"></div>
+                <h4 class="best_text">촉촉바삭 에그타르트</h4>
+              </div>
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <div class="best_img"><img src="./images_2/best_menu(other1).png" alt="쿠키"></div>
+                <h4 class="best_text">고소하고 부드러운 소금빵</h4>
+              </div>
+            </div>
+              
+              <div class="swiper-slide">
+                <div class="best_wrap">
+                  <div class="best_img"><img src="./images_2/best_menu(other2).png" alt="쿠키"></div>
+                  <h4 class="best_text">바닐라 카라멜 커피쿠키</h4>
+                </div>
+                
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="best_wrap">
+                <div class="best_img"><img src="./images_2/best_menu(other3).png" alt="쿠키"></div>
+                <h4 class="best_text">치즈 망고 케이크</h4>
+              </div>
+              
+            
+          </div>
+            
+          </div>
+          
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".best_swiper", {
+          grabCursor: true,
+          centeredSlides: false,
+          slidesPerView: 5,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+
+</div>
+          
+      <div class="main_banner">
+        <div class="container">
+          <a href="#">
+            <span><img src="./images_2/main_banner2.png" alt="이미지2"></span>
+          </a>
+        </div>
+       
+      </div>
+          
+       
+     
+        <!-- new event -->
+        
+        <div class="new_event">
+          
+          <h3>New & Event</h3>
+          <div class="event_inner">
+            <div class="container">
+              
+                <div class="event_gift">
+                  <a href="#"><!-- <img src="./images_2/event_input.png" alt="photo"> --></a>
+                </div>
+              <div class="event_input">
+               
+                <input type="text" placeholder="내 소확행은 아.아 한모금과 달달한"> <span>시즌</span><strong>응모하기</strong>
+              </div>
+              <div class="event_output">
+                <div class="event_slide_wrapper">
+                  <div class="event_slide s1">
+                    <p><span>달달한게 땡길땐 시즌</span><img src="./images_2/event_output6 .png" alt="photo"></p>
+                    <p><span>내 입의 짝궁 시즌</span><img src="./images_2/event_output5.png" alt="photo"></p>
+                    <p><span>기쁠때나 우울할때나 시즌</span><img src="./images_2/event_output4.png" alt="photo"></p>
+                    <p><span>나만의시즌</span><img src="./images_2/event_output3.png" alt="photo"></p>
+                    <p><span>너와 결혼하고싶은 시즌</span><img src="./images_2/event_output2.png" alt="photo"></p>
+                    <p><img src="./images_2/event_output7 .png" alt="photo"><span>일에 치어 반쪽된 내 얼굴 다시 빵빵하게 채워주는 시즌</span></p>
+                    <p><img src="./images_2/event_output1.png" alt="photo"><span>이렇게 맛있는 시즌</span></p>
+                    <p><img src="./images_2/event_output8.png" alt="photo"><span>365일 언제 어디서나 시즌</span></p>
+                    <p><img src="./images_2/event_output9.png" alt="photo"><span>삼시세끼 시즌</span></p>
+                  </div>
+                  <div class="event_slide s2">
+                    <p><span>달달한게 땡길땐 시즌</span><img src="./images_2/event_output6 .png" alt="photo"></p>
+                    <p><span>내 입의 짝궁 시즌</span><img src="./images_2/event_output5.png" alt="photo"></p>
+                    <p><span>기쁠때나 우울할때나 시즌</span><img src="./images_2/event_output4.png" alt="photo"></p>
+                    <p><span>나만의시즌</span><img src="./images_2/event_output3.png" alt="photo"></p>
+                    <p><span>너와 결혼하고싶은 시즌</span><img src="./images_2/event_output2.png" alt="photo"></p>
+                    <p><img src="./images_2/event_output7 .png" alt="photo"><span>일에 치어 반쪽된 내 얼굴 다시 빵빵하게 채워주는 시즌</span></p>
+                    <p><img src="./images_2/event_output1.png" alt="photo"><span>이렇게 맛있는 시즌</span></p>
+                    <p><img src="./images_2/event_output8.png" alt="photo"><span>365일 언제어디서나 시즌</span></p>
+                    <p><img src="./images_2/event_output9.png" alt="photo"><span>삼시세끼 시즌</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- instagram -->
+        <div class="instagram">
+          <div class="container">
+            <h3>instagram</h3>
+              <ul>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="./images_2/main_insta1.jpg" alt="이미지1">
+                      <figcaption>#베이크인시즌</figcaption>
+                    </figure>
+                   
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                    <img src="./images_2/main_insta2.jpg" alt="이미지2">
+                    <figcaption>#베이크인시즌</figcaption>
+                  </figure>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="./images_2/main_insta3.jpg" alt="이미지3">
+                      <figcaption>#베이크인시즌</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="./images_2/main_insta4.jpg" alt="이미지4">
+                      <figcaption>#베이크인시즌</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                      <img src="./images_2/main_insta5.jpg" alt="이미지5">
+                      <figcaption>#베이크인시즌</figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <figure>
+                    <img src="./images_2/main_insta6.png" alt="이미지6">
+                    <figcaption>#베이크인시즌</figcaption>
+                  </figure>
+                  </a>
+                </li>
+              </ul>         
+       
+              </div>
+             </div>
+                  
+          
+     
+    </section>
+
+
+    <footer id="footer">
+      <div class="footer1">
+        <div class="container">
+          <div class="footer1_1">
+            <ul>
+              <li><span>COMPANY IMFORMATION</span></li>
+              <li>경기도  광주시  수하길 28번길 10</li>
+              <br> </br>
+              <li><span>HELP</span> </li>
+              <li>고객센터 : 1544-1544</li>
+              <li>운영시간 : 평일 10시~12시<br>
+                           주말  :   13시~17시 </li>
+            </ul>
+          </div>
+          <div class="footer1_2">
+            <ul>
+              <li>SOCIAL</li>
+              <li><a href="#"><img src="./images_2/main_instalogo.jpg" alt="logo">INSTAGRAM </a></li>
+              <li><a href="#"><img src="./images_2/main_kakao.jpg" alt="logo">KAKAOTALK</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer1_3">
+              <a href="#"><img src="./images_2/main_logo(other).png" alt="logo"></a>
+              <a href="#"><img src="./images_2/main_footer2.png" alt="logo"></a>
+          </div>
+        </div>
+        </div>
+      <div class="footer2">
+        <p>Copyright © 2024 Bake In Season. All Rights Reserved.</p>
+      </div>
+      
+    </footer>
+
+    <!-- <button id="openPopup">이벤트 팝업 열기</button> -->
+
+    <!-- Popup Modal -->
+    <div id="popupModal" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <img src="./images_2/main_popup.png" alt="팝업 이미지">
+        </div>
+    </div>
+
+</div>
+    
+</body>
+</html>
